@@ -1,0 +1,32 @@
+//image 1
+width is 3;
+color is (255,0,0);
+origin is (20,200);
+rot is 0;
+scale is (40,40);
+for T from 0 to 2*pi+pi/50 step pi/50 draw(t,sin(t));
+origin is (20,240);
+for T from 0 to 2*pi+pi/50 step pi/50 draw(t,sin(t));
+origin is (20,280);
+for T from 0 to 2*pi+pi/50 step pi/50 draw(t,sin(t));
+//image 2
+color is (0,255,0);
+origin is (380,240);
+scale is (80,80/3);
+rot is pi/2;
+for T from -pi to pi step pi/50 draw(cos(T),sin(T));
+color is (0,0,255);
+rot is pi/2+2*pi/3;
+for T from -pi to pi step pi/50 draw(cos(T),sin(T));
+color is (255,0,0);
+rot is pi/2-2*pi/3;
+for T from -pi to pi step pi/50 draw(cos(T),sin(T));
+//image 3
+color is (0,0,255);
+origin is (580,240);
+scale is (80,80);
+rot is 0;
+for t from 0 to 2*pi step pi/50 draw(cos(T),sin(T));
+for t from 0 to 20*pi step pi/50 draw
+                    ((1-1/(10/7))*cos(T)+1/(10/7)*cos(-T*((10/7)-1)),
+                    (1-1/(10/7))*sin(T)+1/(10/7)*sin(-T*((10/7)-1)));
